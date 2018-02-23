@@ -23,7 +23,7 @@ def main():
     for i in range(10):
         for name in ['col', 'pid', 'p', 'car', 'find', 'write', 'cond']:
             headers.append(name + str(i))
-    data = pd.read_csv("debug.csv", names=headers)
+    data = pd.read_csv("data/data.csv", names=headers)
     for i in range(10):
         for name in ['col', 'pid', 'p', 'car', 'find', 'write', 'cond']:
             elems.append(data[name + str(i)].tolist())
